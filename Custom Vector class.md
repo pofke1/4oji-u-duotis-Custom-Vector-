@@ -157,6 +157,7 @@ Vector(){size_ = 0;capacity_ = 0; stlstart = NULL;}
 ```
  - 2oji dalis, spartos analizė: 
 Su int:
+
 | Nr | El. sk. | std::vector laikas| Vector laikas |
 | ------ | ------ | ------ | ------ |
 | 1 | 1M | 0.007 |  0.011|
@@ -168,7 +169,9 @@ Su int:
 | 7 | 100M | 0.706|  0.683 |
 | 8 |100M  |  0.706|  0.748 |
 | 9 |100M  |0.661 | 0.681  |
+
 Su studentas klase:
+
 | Nr | El. sk. | std::vector laikas| Vector laikas |
 | ------ | ------ | ------ | ------ |
 | 1 |100k | 0.109 |  0.062|
@@ -180,6 +183,7 @@ Su studentas klase:
 | 7 | 3M | 2.707|  1.804 |
 | 8 |3M  |  2.759|  1.783 |
 | 9 |3M  |2.816 | 2.086  |
+
 Taigi matome, kad su mažom klasėm mažesnius elementų kiekius std::vector prideda šiek tiek greičiau, tačiau prie didesnių kiekų Vector greitis išsilygina arba netgi tampa didesnis, tačiau su didelėm klasėm Vector veikia pastebimai greičiau nei std::vector.
  - 3oji užduotis: reallocationu palyginimas:
 
